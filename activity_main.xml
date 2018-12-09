@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연결"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView android:text="희망온도"/>
+            <EditText android:id="@+id/tempText"/>
+            <Button android:id="@+id/btnTemp"
+                android:text="온도 설정"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="희망습도"/>
+            <EditText android:id="@+id/humiText"/>
+            <Button android:id="@+id/btnHumi"
+                android:text="습도 설정"/>
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/btnOn"
+                android:text="ON"/>
+            <Button android:id="@+id/btnOff"
+                android:text="OFF"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
